@@ -3,3 +3,14 @@
 #média abaixo de 5.0: reprovado
 #média entre 5.0 e 6.9: recuperação
 #média 7.0 ou superior: aprovado
+
+noteOne = float(input('digite qual foi sua primeira nota: '))
+noteTwo = float(input('digite qual foi sua segunda nota: '))
+average = (noteOne + noteTwo) / 2
+
+if average < 5:
+    print('REPROVADO')
+elif average < 7:
+    print('RECUPERAÇÃO')
+else:
+    print('APROVADO')
