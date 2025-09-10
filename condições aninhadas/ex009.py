@@ -5,3 +5,18 @@
 #25 até 30: sobrepeso
 #30 até 40: obesidade
 #Acimda de 40: obesidade mórbida
+
+height = float(input('digite sua altura: '))
+weight = float(input('digite seu peso: '))
+imc = weight / (height * height)
+
+if imc < 18.5:
+    print('abaixo do peso')
+elif imc <= 25:
+    print('peso ideal')
+elif imc <= 30:
+    print('obesidade')
+elif imc <= 40:
+    print('obesidade')
+else:
+    print('obesidade mórbida')
