@@ -1,0 +1,1 @@
+#crie um programa que leia o ano de nascimento de sete pessoas. no final, mostre quantas pessoas ainda não atingiram a maioridade e quantas ja são de maiores coloque que a maior idade seja 21 anos

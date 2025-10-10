@@ -1,8 +1,16 @@
 #crie um programa que faça o computador jogar jokepô com você
 
 from random import randint
+from time import sleep # para ter um tempo até o outro print
 
 myChoice = str(input('Digite pedra, papel ou tesoura: '))
+
+print("JO")
+sleep(1)
+print('KEN')
+sleep(1)
+print("PO!")
+print('-='* 20)
 
 choiceComputer = randint(0, 2)
 

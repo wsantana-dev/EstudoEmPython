@@ -1,0 +1,1 @@
+#faça uma tabuada de um numero que o usuario escolher só que agora usando o laço for

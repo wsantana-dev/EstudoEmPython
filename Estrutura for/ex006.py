@@ -1,0 +1,1 @@
+#desenvolva um programa que leia o primerio termo e a raão de uma PA, no final, mostre os 10 primeiros termos dessa progressão
