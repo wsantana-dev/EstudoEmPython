@@ -1,0 +1,1 @@
+#Melhore o jogo do DESAFIO 028 onde o computador vai "pensar" em um numero de 0 e 10. só que agora o jogador vai tentar adivinhar qté acerta, mostrando no final quantos palpites foram necessarios para vencer

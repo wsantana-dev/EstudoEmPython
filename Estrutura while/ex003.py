@@ -1,0 +1,7 @@
+# Crie um programa que leia um menu na tela:
+# [1] SOMAR
+# [2] MULTIPLICAR
+# [3] MAIOR
+# [4] NOVO NUMERO
+# [5] SAIR DO PROGRAMA
+#SEU PROGRAMA DEVERA REALIZAR A OPERAÇÃO SOLICITADA EM CADA CASO

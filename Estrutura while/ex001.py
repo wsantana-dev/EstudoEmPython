@@ -1,0 +1,1 @@
+#Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores M ou F. Caso esteja errado, éça a digitação novamente até ter o valor correto
