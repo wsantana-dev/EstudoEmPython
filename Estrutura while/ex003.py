@@ -1,4 +1,4 @@
-# Crie um programa que leia um menu na tela:
+# Crie um programa que leia DOIS VALORES E MOSTRE um menu na tela:
 # [1] SOMAR
 # [2] MULTIPLICAR
 # [3] MAIOR
