@@ -1,0 +1,104 @@
+ESTRUTURAS DE DADOS COMPOSTAS — LISTAS COMPOSTAS
+( LISTA DENTRO DE LISTA )
+
+Uma lista composta é quando uma lista armazena outras listas dentro dela.
+Ela é usada quando queremos guardar vários dados organizados por POSIÇÃO.
+
+LISTA NORMAL
+lista = []
+
+LISTA COMPOSTA
+lista = [['pedro', 25, 'M'], ['maria', 30, 'F']]
+
+Cada posição da lista principal guarda uma sublista.
+
+ÍNDICE DA LISTA PRINCIPAL
+0 → ['pedro', 25, 'M']
+1 → ['maria', 30, 'F']
+
+COMO ACESSAR OS DADOS
+
+Primeiro índice → escolhe a pessoa
+Segundo índice → escolhe a informação
+
+lista[0][0] → 'pedro'
+lista[0][1] → 25
+lista[0][2] → 'M'
+
+EXEMPLO:
+
+pessoas = [['Ana', 19], ['João', 22], ['Carlos', 30]]
+
+print(pessoas[1][0]) → João
+print(pessoas[2][1]) → 30
+
+ADICIONANDO DADOS CORRETAMENTE
+
+IMPORTANTE: usar cópia da lista
+
+lista = []
+dados = []
+
+dados.append('Pedro')
+dados.append(25)
+
+lista.append(dados[:]) # COPIA A LISTA
+dados.clear()
+
+Se NÃO usar [:], todas as posições da lista ficam iguais.
+
+PERCORRENDO LISTA COMPOSTA
+
+for p in lista:
+print(p[0], p[1])
+
+p representa cada sublista
+
+p[0] → primeiro dado
+p[1] → segundo dado
+
+USANDO ENUMERATE (ÍNDICE + VALOR)
+
+for i, p in enumerate(lista):
+print(i, p[0], p[1])
+
+i = número da posição
+p = sublista
+
+LISTA COMPOSTA FUNCIONA COMO UMA TABELA
+
+Índice | Nome | Idade
+0 | Pedro | 25
+1 | Maria | 30
+
+A lista guarda por POSIÇÃO, não por nome.
+
+DIFERENÇA ENTRE LISTA COMPOSTA E DICIONÁRIO
+
+LISTA COMPOSTA → usa posição
+dados[0]
+
+DICIONÁRIO → usa chave
+dados['nome']
+
+Na lista a ordem importa
+No dicionário o nome da chave importa
+
+LISTA COMPOSTA EM MATRIZ (TABELA NUMÉRICA)
+
+matriz = [[1,2,3],
+[4,5,6],
+[7,8,9]]
+
+matriz[1][2] → 6
+
+Primeiro índice = linha
+Segundo índice = coluna
+
+RESUMO FINAL
+
+Lista composta = lista dentro de lista
+Acesso sempre assim: lista[indice][indice_interno]
+Use [:] para copiar ao adicionar
+For percorre cada sublista
+Funciona como tabela de dados

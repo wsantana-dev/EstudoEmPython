@@ -1,0 +1,91 @@
+ESTRUTURA DE DECISÃO — CONDIÇÃO ANINHADA
+
+Condição aninhada é quando usamos um if dentro de outro if
+Isso permite testar situações mais específicas.
+
+ESTRUTURA BÁSICA
+
+if condição1:
+if condição2:
+bloco de código
+
+O segundo if só é testado se o primeiro for verdadeiro.
+
+EXEMPLO SIMPLES
+
+idade = 20
+
+if idade >= 18:
+print("Maior de idade")
+if idade >= 21:
+print("Pode dirigir caminhão")
+else:
+print("Menor de idade")
+
+IF DENTRO DE ELSE
+
+numero = 10
+
+if numero > 0:
+print("Número positivo")
+else:
+if numero == 0:
+print("Número é zero")
+else:
+print("Número negativo")
+
+USANDO ELIF (FORMA MAIS ORGANIZADA)
+
+nota = 7
+
+if nota >= 9:
+print("Excelente")
+elif nota >= 7:
+print("Bom")
+elif nota >= 5:
+print("Regular")
+else:
+print("Reprovado")
+
+ELIF evita muitos if dentro de if
+
+CONDIÇÃO ANINHADA COM MAIS DE UM TESTE
+
+usuario = "admin"
+senha = "1234"
+
+if usuario == "admin":
+if senha == "1234":
+print("Login correto")
+else:
+print("Senha incorreta")
+else:
+print("Usuário não existe")
+
+OPERADORES LÓGICOS (MUITO USADOS EM ANINHAMENTO)
+
+and → e
+or → ou
+not → negação
+
+if idade >= 18 and idade <= 60:
+print("Pode trabalhar")
+
+CUIDADO COM INDENTAÇÃO
+
+Python usa espaço para definir os blocos.
+
+if condição:
+comando1
+if outra_condição:
+comando2
+
+Se errar a indentação, o código muda de lógica.
+
+RESUMO FINAL
+
+Condição aninhada = if dentro de if
+Usada para decisões mais específicas
+Pode usar elif para organizar melhor
+Indentação é OBRIGATÓRIA
+Pode combinar com and, or, not

@@ -1,0 +1,111 @@
+ESTRUTURA DE REPETIÇÃO — WHILE
+
+O while é usado para repetir um bloco de código ENQUANTO uma condição for verdadeira.
+
+Ele é usado quando NÃO sabemos exatamente quantas vezes o loop vai acontecer.
+
+ESTRUTURA BÁSICA
+
+while condição:
+bloco de código
+
+Enquanto a condição for TRUE, o loop continua.
+
+EXEMPLO SIMPLES
+
+contador = 1
+
+while contador <= 5:
+print(contador)
+contador += 1
+
+Saída:
+1
+2
+3
+4
+5
+
+IMPORTANTE: ATUALIZAR A VARIÁVEL
+
+Se não atualizar, vira LOOP INFINITO.
+
+while True:
+print("nunca para") ❌
+
+WHILE COM CONDIÇÃO DE PARADA
+
+while True:
+nome = input("Digite seu nome (sair para parar): ")
+
+if nome == "sair":
+    break
+
+print(f"Olá {nome}")
+
+
+break → interrompe o loop
+
+WHILE COM CONTADOR
+
+i = 0
+
+while i < 3:
+print("Oi")
+i += 1
+
+Repete 3 vezes
+
+WHILE PARA VALIDAÇÃO
+
+nota = -1
+
+while nota < 0 or nota > 10:
+nota = float(input("Digite uma nota entre 0 e 10: "))
+
+Só sai quando o valor for válido
+
+WHILE COM ELSE
+
+contador = 1
+
+while contador <= 3:
+print(contador)
+contador += 1
+else:
+print("Fim do loop")
+
+O else executa quando o while termina normalmente
+
+COMANDO CONTINUE
+
+Pula o resto do código e volta para o início do loop
+
+i = 0
+
+while i < 5:
+i += 1
+if i == 3:
+continue
+print(i)
+
+Não imprime o 3
+
+WHILE TRUE (LAÇO INFINITO CONTROLADO)
+
+while True:
+opcao = int(input("1-Continuar 2-Sair: "))
+
+if opcao == 2:
+    break
+
+
+Muito usado em menus
+
+RESUMO FINAL
+
+while repete enquanto a condição for verdadeira
+Precisa atualizar variável de controle
+break para parar o loop
+continue pula para o próximo ciclo
+Usado quando não sabemos quantas repetições terão

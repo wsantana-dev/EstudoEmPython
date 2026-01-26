@@ -1,0 +1,81 @@
+              mais uma estrutura de dados composta
+
+    as estuturas de dados compostas são tuplas, listas e dicionario
+
+nas listas localizamos o iten pelo indice dele, no dicionario voce pode criar nome para indice
+
+tuplas = ()
+listas = []
+dicionarios = {} ou dicionario = dict()
+
+
+exemplo:
+
+[[pedro], [25], 'M']
+ 'nome' 'idade' 'sexo'
+
+dados = {'nome':'pedro', 'idade':25} pedro é o valor e nome é o identificador
+print(dados['nome']) pedro 
+print(dados['idade']) 25
+
+np dicionario o .append não funciona para adicionar elemento é só :
+
+dados['sexo'] = 'M' # ele vai criar e ja colocar o o valor 'M'
+
+del dados['idade'] para remover elementos
+________________________________________________________________________________________________
+
+
+filme = {'titulo:'star wars',
+         'ano':1997,                #esses elementos são chaves ou keys
+         'diretor:'Geoge Lucas'
+         }
+
+1#  print(filme.values()) isso vai me retornar todos os valores do meu dicionario
+                [star wars, 1997, George Lucas]
+
+2# print(filme.keys()) isso vai me retornar as chaves do dicionario filme
+                [titulo, ano, diretor]
+
+3# print(filme.items()) isso retorna os valores e as chaves 
+        [titulo, star wars, ano, 1997, diretor, George Lucas]
+
+ ############  IMPORTANTE ############################
+
+VALOR: 1# Values()     valores de dentro
+CHAVE: 2# Keys()       o nome das chaves 
+ITEN: 3#  Items()      os dois
+
+pode usar isso no for EXEMPLO:
+
+for k, v in filme.items():    #k para keys e #v para values
+    print(f'o {k} é o {v}') 
+
+    vai indo for por for então o primeiro for vai ficar
+
+    o titulo é star wars        #primeiro loop
+    o ano é 1977                 #segundo loop
+    o diretor é George Lucas     #terceiro loop
+    o  {k}    é     {v}
+
+
+
+####################### IMPORTANTE ############################
+
+VOCE PODE JUNTAR UMA LISTA E UM DICIONARIO
+
+EXEMPLO:
+
+você cria uma variavel para uma listas chamada locadora
+
+locadora = []  e dentro de cada indice voce pode adicionar um dicionario dentro
+
+dentro do indice 0 eu tenho : titulo: star wars, ano: 1977, diretor: George
+dentro do indice 1 eu tenho : titulo: avenger, ano: 2012, diretor: Joss
+dentro do indice 2 eu tenho : titulo: matrix, ano: 1999, diretor: wachoski
+
+ai dentro de cada indice eu tenho cada chave e dentro das chaves tem valores
+
+o primeiro é o indice e o segundo e a chave do dicionario
+print(locadora[0]['ano']) 1977
+print(locadora[2][titulo]) matrix

@@ -1,0 +1,136 @@
+ESTRUTURA DE REPETIÇÃO — FOR
+
+O for é usado quando sabemos quantas vezes queremos repetir algo
+ou quando queremos percorrer elementos de uma coleção (lista, tupla, string, etc).
+
+ESTRUTURA BÁSICA
+
+for variavel in sequência:
+bloco de código
+
+A variável vai receber um valor diferente a cada volta do loop.
+
+EXEMPLO COM RANGE
+
+for i in range(5):
+print(i)
+
+Saída:
+0
+1
+2
+3
+4
+
+range(5) → começa do 0 e vai até 4
+
+RANGE COM INÍCIO E FIM
+
+for i in range(1, 6):
+print(i)
+
+Saída:
+1
+2
+3
+4
+5
+
+range(1, 6) → vai de 1 até 5
+
+RANGE COM PASSO
+
+for i in range(0, 10, 2):
+print(i)
+
+Saída:
+0
+2
+4
+6
+8
+
+O terceiro número é o “pulo”
+
+PERCORRENDO LISTA
+
+nomes = ["Ana", "Carlos", "João"]
+
+for nome in nomes:
+print(nome)
+
+A variável "nome" recebe cada item da lista
+
+PERCORRENDO STRING
+
+for letra in "Python":
+print(letra)
+
+Vai letra por letra
+
+USANDO ÍNDICE COM ENUMERATE
+
+nomes = ["Ana", "Carlos", "João"]
+
+for pos, nome in enumerate(nomes):
+print(pos, nome)
+
+Saída:
+0 Ana
+1 Carlos
+2 João
+
+pos → índice
+nome → valor
+
+FOR COM IF
+
+for i in range(10):
+if i % 2 == 0:
+print(i)
+
+Mostra apenas números pares
+
+FOR DENTRO DE FOR (ANINHADO)
+
+for i in range(3):
+for j in range(2):
+print(i, j)
+
+Muito usado em MATRIZES
+
+COMANDO BREAK
+
+for i in range(10):
+if i == 5:
+break
+print(i)
+
+Para o loop quando chega no 5
+
+COMANDO CONTINUE
+
+for i in range(5):
+if i == 2:
+continue
+print(i)
+
+Pula o 2
+
+FOR COM ELSE
+
+for i in range(3):
+print(i)
+else:
+print("Fim do for")
+
+O else executa quando o for termina normalmente
+
+RESUMO FINAL
+
+for é usado quando sabemos a quantidade de repetições
+range() cria sequências numéricas
+Pode percorrer listas, strings, tuplas, dicionários
+enumerate() dá índice + valor
+break para parar
+continue para pular

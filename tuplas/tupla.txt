@@ -1,0 +1,114 @@
+ESTRUTURA DE DADOS — TUPLAS
+
+Tupla é uma estrutura usada para guardar vários valores em sequência.
+Ela é ORDENADA, usa ÍNDICES, MAS É IMUTÁVEL (não pode alterar depois de criada).
+
+CRIANDO UMA TUPLA
+
+tupla = ()
+numeros = (10, 20, 30)
+nomes = ('ana', 'carlos', 'maria')
+
+Tupla com um elemento:
+tupla = (5,) # precisa da vírgula
+
+ÍNDICES DA TUPLA
+
+Toda tupla começa no índice 0
+
+tupla = ('A', 'B', 'C')
+
+0 → 'A'
+1 → 'B'
+2 → 'C'
+
+Acesso:
+
+tupla[0] → 'A'
+tupla[2] → 'C'
+
+TUPLA É IMUTÁVEL
+
+NÃO pode:
+
+tupla[0] = 'X' ❌ ERRO
+tupla.append(10) ❌ ERRO
+
+Depois de criada, não muda.
+
+PERCORRENDO UMA TUPLA
+
+for valor in tupla:
+print(valor)
+
+PERCORRENDO COM ÍNDICE
+
+for i, valor in enumerate(tupla):
+print(i, valor)
+
+TAMANHO DA TUPLA
+
+len(tupla)
+
+tupla = (5, 8, 10)
+len(tupla) → 3
+
+VERIFICAR SE UM VALOR EXISTE
+
+if 10 in tupla:
+print('Existe')
+
+CONTAR VALORES
+
+count(valor) → conta quantas vezes aparece
+
+tupla = (1, 2, 2, 3)
+tupla.count(2) → 2
+
+SABER POSIÇÃO DE UM VALOR
+
+index(valor)
+
+tupla = (10, 20, 30)
+tupla.index(20) → 1
+
+ORDENANDO TUPLA
+
+Tupla não ordena direto (é imutável)
+
+Usar sorted():
+
+tupla = (3, 1, 2)
+nova = sorted(tupla)
+
+Resultado:
+[1, 2, 3] # vira lista
+
+TUPLAS PODEM GUARDAR TIPOS DIFERENTES
+
+tupla = ('ana', 25, True, 9.5)
+
+QUANDO USAR TUPLAS?
+
+✔️ Quando os dados NÃO devem mudar
+✔️ Coordenadas (x, y)
+✔️ Datas (dia, mes, ano)
+✔️ Configurações fixas
+
+DIFERENÇA ENTRE LISTA E TUPLA
+
+Lista → mutável []
+Tupla → imutável ()
+
+Lista pode alterar
+Tupla é fixa
+
+RESUMO FINAL
+
+Tupla = coleção ordenada de valores
+Índice começa em 0
+É IMUTÁVEL
+len conta elementos
+for percorre
+count conta valores
+index mostra posição

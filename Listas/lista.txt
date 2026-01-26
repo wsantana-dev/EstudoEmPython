@@ -1,0 +1,125 @@
+BORA 🔥 aqui vai no mesmo padrão, pronto pra colar no TXT.
+
+ESTRUTURA DE DADOS — LISTAS (LISTA NORMAL)
+
+Lista é uma estrutura usada para guardar vários valores em sequência.
+Ela é ORDENADA e usa ÍNDICES para acessar os elementos.
+
+CRIANDO UMA LISTA
+
+lista = []
+numeros = [10, 20, 30]
+nomes = ['ana', 'carlos', 'maria']
+
+ÍNDICES DA LISTA
+
+Toda lista começa no índice 0
+
+lista = ['A', 'B', 'C']
+
+0 → 'A'
+1 → 'B'
+2 → 'C'
+
+Acesso:
+
+lista[0] → 'A'
+lista[2] → 'C'
+
+ADICIONANDO ELEMENTOS
+
+append() → adiciona no final
+
+lista = []
+lista.append(10)
+lista.append(20)
+
+Resultado:
+[10, 20]
+
+INSERINDO EM POSIÇÃO ESPECÍFICA
+
+insert(posição, valor)
+
+lista = [10, 30]
+lista.insert(1, 20)
+
+Resultado:
+[10, 20, 30]
+
+REMOVENDO ELEMENTOS
+
+remove(valor) → remove pelo valor
+pop() → remove pelo índice
+
+lista = [10, 20, 30]
+
+lista.remove(20)
+[10, 30]
+
+lista.pop(0)
+[30]
+
+TAMANHO DA LISTA
+
+len(lista)
+
+lista = [5, 8, 10]
+len(lista) → 3
+
+PERCORRENDO UMA LISTA
+
+for valor in lista:
+print(valor)
+
+Percorre item por item
+
+PERCORRENDO COM ÍNDICE
+
+for i, valor in enumerate(lista):
+print(i, valor)
+
+i → posição
+valor → conteúdo
+
+ORDENANDO LISTA
+
+sort() → ordena a própria lista
+sorted() → cria lista nova ordenada
+
+lista = [3, 1, 2]
+lista.sort()
+
+Resultado:
+[1, 2, 3]
+
+Ordem decrescente:
+lista.sort(reverse=True)
+
+VERIFICAR SE UM VALOR EXISTE
+
+if 10 in lista:
+print('Existe')
+
+COPIANDO LISTA
+
+nova_lista = lista[:] # cópia real
+nova_lista = lista.copy()
+
+NÃO fazer:
+nova_lista = lista # isso liga as duas listas
+
+LISTAS PODEM GUARDAR TIPOS DIFERENTES
+
+lista = ['ana', 25, True, 9.5]
+
+RESUMO FINAL
+
+Lista = coleção ordenada de valores
+Índice começa em 0
+append adiciona
+remove e pop removem
+len conta elementos
+for percorre
+sort ordena
+[:] faz cópia
