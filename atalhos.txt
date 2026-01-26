@@ -1,0 +1,41 @@
+para escrever o bolinha º tem que segurar o alt e digita 167
+
+ if num % 2 == 0: para ver um par ==================================
+
+:^5} isso quer dizer quer quer 5 espaços centralizados 
+
+soma_total = soma_coluna3 = maior_linha2 = 0 
+## SO USA AS VARIAVEIS ASSIM QUANDO É ALGO IMUTAVEL, QUANDO PODE SER ALTERADO NUM LOOP MAS NÃO VAI SER ALTERADO DIRETAMENTA LA ENCIMA OU MELHOR, NÃO USAR COM LISTAS, TUPLAS, DICIONARIOS
+
+ quando voce trabalha com listas dentro de listas voce precisa acessar o conteudo dentro da listas
+ cria uma varialvel exemplo:
+ for n in lista:
+     valor = n[0] aqui voce acessou o conteudo dentro da lista
+     if valor % 2 == 0:
+        print(f'os valores pares digitados foram: [{valor}]')
+
+        lista
+ ├── [2]  → n      ele percorre assim nume lista
+ │     └── 2 → n[0]
+ ├── [7]
+ └── [4]
+
+
+### PARA ACERTAR AS VIGULAS EM ALGO: 
+
+print(f'Os valores pares digitados foram: ', end='[')
+primeiro = True    ######## CRIA ESSE PRIME
+    +
+
+for n in lista:
+    valor = n[0]
+    if valor % 2 == 0:
+       if not primeiro:    #### O NOT ELE INVERTE O TRUE PARA FALSE
+           print(', ', end='')
+       print(valor, end='')
+       primeiro = False
+print(']')
+
+teste = randint(1, 60) ############## Sortear numero
+
+##Para colocar o Terminal na direita crtl + shift + p e digita move painel rigth
